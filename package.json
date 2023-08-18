@@ -1,0 +1,25 @@
+{
+  "name": "cmor-client-vue",
+  "version": "1.0.0",
+  "description": "A vue client for cmor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/content-management-on-rails/cmor-client-vue.git"
+  },
+  "keywords": [
+    "cmor",
+    "client",
+    "vue",
+    "javascript"
+  ],
+  "author": "BeeGood IT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/content-management-on-rails/cmor-client-vue/issues"
+  },
+  "homepage": "https://github.com/content-management-on-rails/cmor-client-vue#readme"
+}
