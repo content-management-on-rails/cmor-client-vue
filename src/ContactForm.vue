@@ -18,11 +18,9 @@
     </ion-item>
     <ion-item>
       <ion-checkbox v-model="formData.acceptTermsOfService">Hiermit erlaube ich dem Seitenbetreiber die Nutzung meiner Daten zwecks Beantwortung dieser Kontaktanfrage.</ion-checkbox>
-      <template v-if="errorFor('accept_terms_of_service')">
-        <ion-text color="danger" class="ion-padding-start">
-          {{ errorFor('accept_terms_of_service') }}
-        </ion-text>
-      </template>
+      <ion-text color="danger" class="ion-padding-start" v-if="errorFor('accept_terms_of_service')">
+        {{ errorFor('accept_terms_of_service') }}
+      </ion-text>
     </ion-item>
 
     <ion-button type="submit" expand="block">Absenden</ion-button>

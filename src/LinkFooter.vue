@@ -3,7 +3,7 @@
     <ion-row>
       <ion-col v-for="(categories, id) in columns" :key="id" size="6" size-md="3">
         <ion-list>
-          <template v-for="category in categories" :key="category.id">
+          <div v-for="category in categories" :key="category.id">
             <h3>{{ category.attributes.name }}</h3>
             <ion-list>
               <ion-item v-for="link in category.attributes.links" :key="link.id" lines="none">
@@ -15,14 +15,14 @@
                 </template>
               </ion-item>
             </ion-list>
-          </template>
+          </div>
         </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
 </template>
 <script setup>
-import { inject, ref } from 'vue';
+import { defineProps, inject, ref } from 'vue';
 
 const useInternalNavigation = (url) => {
   if (url.startsWith('/')) {

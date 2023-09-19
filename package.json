@@ -3,10 +3,10 @@
   "name": "@beegoodit/cmor-client-vue",
   "version": "1.0.0",
   "description": "A vue client for cmor",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "dev": "vue serve TestButton.vue",
-    "build": "bili --name index --plugin vue --vue.css false",
+    "build": "bili",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,7 +30,8 @@
   ],
   "devDependencies": {
     "bili": "^5.0.5",
-    "rollup-plugin-vue": "^6.0.0",
-    "vue-template-compiler": "^2.7.14"
+    "rollup-plugin-vue": "< 6.0.0",
+    "vue-template-compiler": "^ 2.7.14"
   }
 }
+

@@ -4,6 +4,8 @@
   </ion-card>
 </template>
 <script setup>
+import { defineProps } from 'vue';
+
 defineProps({
   color: {
     type: String,
