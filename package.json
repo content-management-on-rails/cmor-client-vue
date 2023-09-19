@@ -1,5 +1,5 @@
 {
-  "name": "cmor-client-vue",
+  "name": "@beegoodit/cmor-client-vue",
   "private": true,
   "version": "0.0.0",
   "type": "module",
