@@ -22,7 +22,7 @@
   </ion-grid>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { inject, ref } from 'vue';
 
 const useInternalNavigation = (url) => {
   if (url.startsWith('/')) {
@@ -39,8 +39,7 @@ const columns = ref({
   4: []
 });
 
-const host = import.meta.env.VITE_BACKEND_BASE_URL;
-const apiToken = import.meta.env.VITE_BACKEND_API_TOKEN;
+const cmorClient = inject('cmorClient')
 
 const fetchLinkCategories = async (host, apiToken) => {
   const response = await fetch(`${host}/api/links/categories.json?populate[]=links`, {
@@ -49,6 +48,9 @@ const fetchLinkCategories = async (host, apiToken) => {
       'Authorization': `Bearer ${apiToken}`
     }
   });
+  if(!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
   const data = await response.json();
   /* assign categories to columns */
   data.data.forEach((category) => {
@@ -56,7 +58,7 @@ const fetchLinkCategories = async (host, apiToken) => {
   });
 }
 
-fetchLinkCategories(host, apiToken);
+fetchLinkCategories(cmorClient.api.baseUrl, cmorClient.api.token);
 </script>
 <style scoped>
 ion-list {
