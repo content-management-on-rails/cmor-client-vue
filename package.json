@@ -1,7 +1,10 @@
 {
   "name": "@beegoodit/cmor-client-vue",
   "private": false,
-  "files": ["dist", "src/components/"],
+  "files": [
+    "dist",
+    "src/components/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/content-management-on-rails/cmor.git"
@@ -35,7 +38,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "@ionic/vue": "^7.4.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
