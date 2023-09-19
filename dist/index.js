@@ -7,8 +7,8 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var __vue_normalize__ = require('vue-runtime-helpers/dist/normalize-component.mjs');
-var __vue_create_injector__ = require('vue-runtime-helpers/dist/inject-style/browser.mjs');
+var __vue_normalize__ = require('vue-runtime-helpers/dist/normalize-component.js');
+var __vue_create_injector__ = require('vue-runtime-helpers/dist/inject-style/browser.js');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -47,12 +47,10 @@ var __vue_module_identifier__$2 = undefined;
 var __vue_is_functional_template__$2 = false;
 /* style inject SSR */
 
-/* style inject shadow dom */
-
-var __vue_component__$2 = /*#__PURE__*/__vue_normalize____default["default"]({
+var Alert = __vue_normalize____default["default"]({
   render: __vue_render__$2,
   staticRenderFns: __vue_staticRenderFns__$2
-}, __vue_inject_styles__$2, {}, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, false, __vue_create_injector____default["default"], undefined, undefined);
+}, __vue_inject_styles__$2, {}, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, __vue_create_injector____default["default"], undefined);
 
 /* script */
 
@@ -181,12 +179,10 @@ var __vue_is_functional_template__$1 = false;
 
 /* style inject SSR */
 
-/* style inject shadow dom */
-
-var __vue_component__$1 = /*#__PURE__*/__vue_normalize____default["default"]({
+var ContactForm = __vue_normalize____default["default"]({
   render: __vue_render__$1,
   staticRenderFns: __vue_staticRenderFns__$1
-}, __vue_inject_styles__$1, {}, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, undefined, undefined, undefined);
+}, __vue_inject_styles__$1, {}, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, undefined, undefined);
 
 /* script */
 
@@ -250,27 +246,25 @@ var __vue_module_identifier__ = undefined;
 var __vue_is_functional_template__ = false;
 /* style inject SSR */
 
-/* style inject shadow dom */
-
-var __vue_component__ = /*#__PURE__*/__vue_normalize____default["default"]({
+var LinkFooter = __vue_normalize____default["default"]({
   render: __vue_render__,
   staticRenderFns: __vue_staticRenderFns__
-}, __vue_inject_styles__, {}, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, __vue_create_injector____default["default"], undefined, undefined);
+}, __vue_inject_styles__, {}, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, __vue_create_injector____default["default"], undefined);
 
 var index = {
   install: function install(app, options) {
     // Let's register our component globally
     // https://vuejs.org/v2/guide/components-registration.html
-    app.component("alert", __vue_component__$2);
-    app.component("contact-form", __vue_component__$1);
-    app.component("link-footer", __vue_component__);
+    app.component("alert", Alert);
+    app.component("contact-form", ContactForm);
+    app.component("link-footer", LinkFooter);
     app.provide('cmorClient', {
       api: options.api
     });
   }
 };
 
-exports.Alert = __vue_component__$2;
-exports.ContactForm = __vue_component__$1;
-exports.LinkFooter = __vue_component__;
+exports.Alert = Alert;
+exports.ContactForm = ContactForm;
+exports.LinkFooter = LinkFooter;
 exports["default"] = index;
