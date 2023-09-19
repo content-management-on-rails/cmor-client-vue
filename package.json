@@ -1,8 +1,34 @@
 {
   "name": "@beegoodit/cmor-client-vue",
-  "private": true,
+  "private": false,
+  "files": ["dist", "src/components/"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/content-management-on-rails/cmor.git"
+  },
+  "keywords": [
+    "cmor-client-vue",
+    "vue3",
+    "vue",
+    "vuejs"
+  ],
+  "main": "./dist/cmor-client-vue.umd.cjs",
+  "module": "./dist/cmor-client-vue.js",
   "version": "0.0.0",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/cmor-client-vue.js",
+      "require": "./dist/cmor-client-vue.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
