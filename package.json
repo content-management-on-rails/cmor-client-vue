@@ -17,7 +17,7 @@
   ],
   "main": "./dist/cmor-client-vue.umd.cjs",
   "module": "./dist/cmor-client-vue.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "exports": {
     ".": {
@@ -31,6 +31,9 @@
   },
   "peerDependencies": {
     "vue": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "dev": "vite",
