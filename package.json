@@ -17,7 +17,7 @@
   ],
   "main": "./dist/cmor-client-vue.umd.cjs",
   "module": "./dist/cmor-client-vue.js",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "exports": {
     ".": {
