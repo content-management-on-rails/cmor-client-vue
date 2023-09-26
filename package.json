@@ -43,6 +43,7 @@
   "dependencies": {
     "@ionic/vue": "^7.4.0",
     "vue": "^3.0.0",
+    "vue-easy-lightbox": "^1.16.0",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
