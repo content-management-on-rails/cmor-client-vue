@@ -25,11 +25,11 @@
 
     <ion-button type="submit" expand="block">{{ $t("cmorClientVue.contactForm.submitButtonText") }}</ion-button>
 
-    <alert color="success" v-if="success === true">
+    <alert color="success" class="ion-margin-top" v-if="success === true">
       Vielen Dank für Ihre Nachricht. Wir werden uns in Kürze bei Ihnen melden.
     </alert>
 
-    <alert color="danger" v-if="success === false">
+    <alert color="danger" class="ion-margin-top" v-if="success === false">
       Es ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Eingaben.
     </alert>
 
