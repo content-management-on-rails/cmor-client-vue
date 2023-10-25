@@ -7,6 +7,7 @@
       "phone": "Telefonnummer",
       "message": "Nachricht",
       "acceptTermsOfService": "Hiermit erlaube ich dem Seitenbetreiber die Nutzung meiner Daten zwecks Beantwortung dieser Kontaktanfrage.",
+      "successMessage": "Danke für ihre Nachricht. Wir werden Sie in Kürze kontaktieren.",
       "errorMessage": "Ein Fehler ist aufgetreten. Bitte überprüfen sie ihre Einträge."
     }
   }
