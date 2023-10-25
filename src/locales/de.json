@@ -6,7 +6,8 @@
       "email": "E-Mail",
       "phone": "Telefonnummer",
       "message": "Nachricht",
-      "acceptTermsOfService": "Hiermit erlaube ich dem Seitenbetreiber die Nutzung meiner Daten zwecks Beantwortung dieser Kontaktanfrage."
+      "acceptTermsOfService": "Hiermit erlaube ich dem Seitenbetreiber die Nutzung meiner Daten zwecks Beantwortung dieser Kontaktanfrage.",
+      "errorMessage": "Ein Fehler ist aufgetreten. Bitte überprüfen sie ihre Einträge."
     }
   }
 }

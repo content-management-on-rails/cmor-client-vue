@@ -13,21 +13,26 @@
       <ion-textarea aria-label="Nachricht" v-model="formData.message" :class="errorClassesFor('message')" :error-text="errorFor('message')" :label="$t('cmorClientVue.contactForm.message')" auto-grow></ion-textarea>
     </ion-item>
     <ion-item>
-      <ion-checkbox v-model="formData.acceptTermsOfService">{{ $t('cmorClientVue.contactForm.acceptTermsOfService') }}</ion-checkbox>
+      <ion-label class="ion-text-wrap">{{ $t('cmorClientVue.contactForm.acceptTermsOfService') }}</ion-label>
+      <ion-checkbox v-model="formData.acceptTermsOfService"></ion-checkbox>
       <ion-text color="danger" class="ion-padding-start" v-if="errorFor('accept_terms_of_service')">
         {{ errorFor('accept_terms_of_service') }}
       </ion-text>
     </ion-item>
 
-    <ion-button type="submit" expand="block">{{ $t("cmorClientVue.contactForm.submitButtonText") }}</ion-button>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" expand="block" class="ion-margin-top">{{ $t("cmorClientVue.contactForm.submitButtonText") }}</ion-button>
 
-    <alert color="success" class="ion-margin-top" v-if="success === true">
-      {{ $t("cmorClientVue.contactForm.successMessage") }}
-    </alert>
+        <alert color="success" class="ion-margin-top" v-if="success === true">
+          {{ $t("cmorClientVue.contactForm.successMessage") }}
+        </alert>
 
-    <alert color="danger" class="ion-margin-top" v-if="success === false">
-      {{ $t("cmorClientVue.contactForm.errorMessage") }}}
-    </alert>
+        <alert color="danger" class="ion-margin-top" v-if="success === false">
+          {{ $t("cmorClientVue.contactForm.errorMessage") }}
+        </alert>
+      </ion-col>
+    </ion-row>
 
   </form>
 </template>
