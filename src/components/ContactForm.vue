@@ -23,7 +23,7 @@
       </ion-text>
     </ion-item>
 
-    <ion-button type="submit" expand="block">Absenden</ion-button>
+    <ion-button type="submit" expand="block">{{ $t("cmorClientVue.contactForm.submitButtonText") }}</ion-button>
 
     <alert color="success" v-if="success === true">
       Vielen Dank für Ihre Nachricht. Wir werden uns in Kürze bei Ihnen melden.

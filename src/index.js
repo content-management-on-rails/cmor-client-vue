@@ -3,7 +3,15 @@ import ContactForm from "./components/ContactForm.vue";
 import Gallery from "./components/Gallery.vue";
 import Galleries from "./components/Galleries.vue";
 import LinkFooter from "./components/LinkFooter.vue";
-export { Alert, ContactForm, Gallery, Galleries, LinkFooter };
+import De from "./locales/de.json";
+import En from "./locales/en.json";
+
+const Locales = {
+  de: De,
+  en: En
+};
+
+export { Alert, ContactForm, Gallery, Galleries, LinkFooter, Locales };
 
 export default {
   install(app, options) {
