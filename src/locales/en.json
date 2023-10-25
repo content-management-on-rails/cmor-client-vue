@@ -1,7 +1,14 @@
 {
   "cmorClientVue": {
     "contactForm": {
-      "submitButtonText": "Submit"
+      "submitButtonText": "Submit",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Phone",
+      "message": "Message",
+      "acceptTermsOfService": "I hereby allow the site operator to use my data to answer this contact request.",
+      "successMessage": "Thank you for your message. We will contact you shortly.",
+      "errorMessage": "An error has occurred. Please check your entries."
     }
   }
 }

@@ -1,23 +1,19 @@
 <template>
   <form @submit.prevent="submit">
     <ion-item>
-      <ion-label position="floating">Name</ion-label>
-      <ion-input type="text" aria-label="Name" v-model="formData.name" :class="errorClassesFor('name')" :error-text="errorFor('name')"></ion-input>
+      <ion-input type="text" aria-label="Name" v-model="formData.name" :class="errorClassesFor('name')" :error-text="errorFor('name')" :label="$t('cmorClientVue.contactForm.name')"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">E-Mail</ion-label>
-      <ion-input type="email" aria-label="E-Mail" v-model="formData.email" :class="errorClassesFor('email')" :error-text="errorFor('email')"></ion-input>
+      <ion-input type="email" aria-label="E-Mail" v-model="formData.email" :class="errorClassesFor('email')" :error-text="errorFor('email')" :label="$t('cmorClientVue.contactForm.email')"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Telefonnummer</ion-label>
-      <ion-input type="phone" aria-label="Phone" v-model="formData.phone" :class="errorClassesFor('phone')" :error-text="errorFor('phone')"></ion-input>
+      <ion-input type="phone" aria-label="Phone" v-model="formData.phone" :class="errorClassesFor('phone')" :error-text="errorFor('phone')" :label="$t('cmorClientVue.contactForm.phone')"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Nachricht</ion-label>
-      <ion-textarea aria-label="Nachricht" v-model="formData.message" :class="errorClassesFor('message')" :error-text="errorFor('message')"></ion-textarea>
+      <ion-textarea aria-label="Nachricht" v-model="formData.message" :class="errorClassesFor('message')" :error-text="errorFor('message')" :label="$t('cmorClientVue.contactForm.message')" auto-grow></ion-textarea>
     </ion-item>
     <ion-item>
-      <ion-checkbox v-model="formData.acceptTermsOfService">Hiermit erlaube ich dem Seitenbetreiber die Nutzung meiner Daten zwecks Beantwortung dieser Kontaktanfrage.</ion-checkbox>
+      <ion-checkbox v-model="formData.acceptTermsOfService">{{ $t('cmorClientVue.contactForm.acceptTermsOfService') }}</ion-checkbox>
       <ion-text color="danger" class="ion-padding-start" v-if="errorFor('accept_terms_of_service')">
         {{ errorFor('accept_terms_of_service') }}
       </ion-text>
@@ -26,11 +22,11 @@
     <ion-button type="submit" expand="block">{{ $t("cmorClientVue.contactForm.submitButtonText") }}</ion-button>
 
     <alert color="success" class="ion-margin-top" v-if="success === true">
-      Vielen Dank für Ihre Nachricht. Wir werden uns in Kürze bei Ihnen melden.
+      {{ $t("cmorClientVue.contactForm.successMessage") }}
     </alert>
 
     <alert color="danger" class="ion-margin-top" v-if="success === false">
-      Es ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Eingaben.
+      {{ $t("cmorClientVue.contactForm.errorMessage") }}}
     </alert>
 
   </form>

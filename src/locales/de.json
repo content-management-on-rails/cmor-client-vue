@@ -1,7 +1,12 @@
 {
   "cmorClientVue": {
     "contactForm": {
-      "submitButtonText": "Absenden"
+      "submitButtonText": "Absenden",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefonnummer",
+      "message": "Nachricht",
+      "acceptTermsOfService": "Hiermit erlaube ich dem Seitenbetreiber die Nutzung meiner Daten zwecks Beantwortung dieser Kontaktanfrage."
     }
   }
 }
