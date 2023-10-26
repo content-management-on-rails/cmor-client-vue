@@ -38,7 +38,7 @@
 </template>
 <script setup>
 import { inject, ref } from 'vue';
-import { IonItem, IonLabel, IonInput, IonTextarea, IonButton, IonText, IonCheckbox } from '@ionic/vue';
+import { IonItem, IonLabel, IonInput, IonTextarea, IonButton, IonText, IonCheckbox, IonCol, IonRow } from '@ionic/vue';
 
 const cmorClient = inject('cmorClient');
 const formData = ref({
