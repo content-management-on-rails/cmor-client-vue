@@ -14,7 +14,7 @@
     </ion-item>
     <ion-item>
       <ion-label class="ion-text-wrap">{{ $t('cmorClientVue.contactForm.acceptTermsOfService') }}</ion-label>
-      <ion-checkbox v-model="formData.acceptTermsOfService"></ion-checkbox>
+      <ion-checkbox v-model="formData.acceptTermsOfService" legacy="true"></ion-checkbox>
       <ion-text color="danger" class="ion-padding-start" v-if="errorFor('accept_terms_of_service')">
         {{ errorFor('accept_terms_of_service') }}
       </ion-text>
